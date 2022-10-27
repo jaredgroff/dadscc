@@ -1,0 +1,55 @@
+.hero-section {
+  position: relative;
+  padding-top: clamp(5rem, 10vh + 5rem, 15rem);
+  .grid {
+    place-items: center;
+    justify-items: end;
+  }
+  .col-media {
+    margin-inline: auto;
+  }
+  h1 {
+    position: relative;
+    color: var(--clr-base-lite);
+  }
+  p {
+    margin-bottom: calc(3 * var(--spacing-1));
+  }
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn {
+    background-color: var(--clr-primary-dark);
+    background: url("../media/img/svgs/chalk-bg-active.svg");
+    background-size: cover;
+    &:hover {
+      background-color: var(--clr-base-lite);
+      background: url("../media/img/svgs/chalk-bg.svg");
+      background-size: cover;
+    }
+  }
+  .btn,
+  .link {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: var(--clr-base-lite);
+    &:hover {
+      color: var(--clr-primary);
+      i {
+        padding-left: 0;
+      }
+    }
+  }
+
+  i {
+    font-size: var(--fs-500);
+    padding-left: 1rem;
+  }
+}

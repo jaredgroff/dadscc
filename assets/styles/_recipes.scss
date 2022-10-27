@@ -1,0 +1,119 @@
+.recipes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .grid {
+    gap: 1rem;
+  }
+  .tabcontent .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: var(--spacing-1);
+    margin-block: calc(5 * var(--spacing-1));
+    grid-template-areas:
+      "polaroid"
+      "recipe"
+      "instructions";
+
+    &:nth-child(1) .polaroid {
+      transform: rotate(-1deg);
+    }
+    &:nth-child(2) .polaroid {
+      transform: rotate(2deg);
+    }
+    &:nth-child(3) .polaroid {
+      transform: rotate(-2deg);
+    }
+    &:nth-child(4) .polaroid {
+      transform: rotate(1deg);
+    }
+    &:nth-child(5) .polaroid {
+      transform: rotate(-1deg);
+    }
+    &:nth-child(6) .polaroid {
+      transform: rotate(2deg);
+    }
+  }
+}
+
+.recipe {
+  grid-area: recipe;
+  color: var(--clr-base-lite);
+  padding: 1rem 2rem;
+  .ingredients {
+    p {
+      margin: var(--spacing) 0;
+    }
+    li {
+      list-style: circle;
+      padding-left: var(--spacing);
+    }
+  }
+}
+.prep-container {
+  div {
+    display: flex;
+    align-items: center;
+  }
+  i {
+    font-size: var(--fs-600);
+    width: 2rem;
+    margin-right: 1rem;
+  }
+  p {
+    margin-block: 0.5rem;
+  }
+}
+
+.instructions {
+  grid-area: instructions;
+  color: var(--clr-base-lite);
+  padding: 1rem 2rem;
+  ol {
+    margin: var(--spacing-1);
+  }
+}
+
+/* Style the tab */
+.tab {
+  width: 100%;
+  padding-inline: 1rem;
+  min-height: 3rem;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  bottom: auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--clr-primary);
+  background: url("../media/img/svgs/chalk-bg.svg");
+  background-size: cover;
+  color: var(--clr-base);
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  img {
+    margin-left: 0.5rem;
+  }
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: var(--clr-primary-dark);
+  background: url("../media/img/svgs/chalk-bg-active.svg");
+  background-size: cover;
+}

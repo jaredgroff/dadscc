@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dad's Coffee Concoctions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dad's Coffee Concoctions" />
+    <meta name="author" content="Jared Groff" />
+    <!-----------------STYLES------------------>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/media/img/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/media/img/favicon.ico"
+    />
+    <link
+      rel="icon"
+      href="assets/media/img/favicons/favicon-32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="assets/media/img/favicons/favicon-192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/media/img/favicons/favicon-180.png"
+      sizes="180x180"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- JS -->
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <!-- My Styles-->
+    <link href="assets/styles/style.css" rel="stylesheet" />
+    <!-- JS Links -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      defer
+    ></script>
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/markerPen.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="container flex">
+          <a href="#hero"
+            ><div class="navbar-brand">
+              <img
+                id="logo"
+                src="assets/media/img/svgs/logo-2.svg"
+                alt="Dad's Coffee Concoctions Logo Mug"
+              />
+              <div id="brand-text">
+                <p>Dad' Coffee</p>
+                <p>Concoctions</p>
+              </div>
+            </div></a
+          >
+          <ul class="nav-list" role="list">
+            <li class="nav-item">
+              <a class="nav-link active-link link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#recipes">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#blog">Blog</a>
+            </li>
+          </ul>
+          <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container grid">
+        <div class="col-text">
+          <header>
+            <h1>
+              Start your day with one of Dad's Coffee
+              <span class="underline-container"
+                >Concoctions
+                <img id="hero-title-underline" src="" alt="" />
+              </span>
+            </h1>
+          </header>
+          <p>
+            Subscribe for weekly emails with new recipes, blog posts, and
+            information on the latest and
+            <span class="ff-ital">hottest</span> in coffee news.
+          </p>
+          <div class="button-container">
+            <button class="btn" href="" role="button">
+              Subscribe now<i class="fa-solid fa-inbox"></i>
+            </button>
+            <a href="#recipes" class="link"
+              ><span class="link-underline">Latest Recipes</span>
+              <i class="bi bi-chevron-double-down"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-media">
+          <img
+            id="hero-media"
+            src="assets/media/img/coffee-vector.svg"
+            alt="image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+      <div class="container flex">
+        <div class="feature-1">
+          <div class="features-icons">
+            <img src="assets/media/img/svgs/label-icons/servings.svg" alt="" />
+            <img src="assets/media/img/svgs/label-icons/clock.svg" alt="" />
+            <p>Feature 1</p>
+          </div>
+          <div class="features-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              eveniet voluptate veritatis ipsam id, quisquam recusandae officiis
+              quasi sapiente hic voluptas.
+            </p>
+          </div>
+        </div>
+        <div class="feature-2">
+          <div class="features-icons">
+            <img src="assets/media/img/svgs/label-icons/servings.svg" alt="" />
+            <img src="assets/media/img/svgs/label-icons/clock.svg" alt="" />
+            <p>Feature 2</p>
+          </div>
+          <div class="features-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              eveniet voluptate veritatis ipsam id, quisquam recusandae officiis
+              quasi sapiente hic voluptas.
+            </p>
+          </div>
+        </div>
+        <div class="feature-3">
+          <div class="features-icons">
+            <img src="assets/media/img/svgs/label-icons/servings.svg" alt="" />
+            <img src="assets/media/img/svgs/label-icons/clock.svg" alt="" />
+            <p>Feature 3</p>
+          </div>
+          <div class="features-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              eveniet voluptate veritatis ipsam id, quisquam recusandae officiis
+              quasi sapiente hic voluptas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="flex">
+          <div class="col-text">
+            <header>
+              <img id="chalk-line" src="assets/media/img/svgs/chalk-line.svg" />
+              <h2>About</h2>
+              <img id="chalk-line" src="assets/media/img/svgs/chalk-line.svg" />
+            </header>
+            <p class="fw-500">
+              Dad's Coffee Concoctions is a collection of some of the finest
+              coffee recipes around.
+            </p>
+            <p>
+              Our story begins in 2016 in the humble home of a dad named Jared.
+              It was here that the very first experimental concoctions were
+              created using fresh coffee beans, various creamers, and a can-do
+              attitude. The run-of-the-mill coffee brew just wasn't cutting it
+              anymore. Jared was looking for more out of his morning coffee
+              experience -- he was a dad now.
+            </p>
+            <p>
+              Seven years later, that dad has more kids and needs more coffee.
+            </p>
+          </div>
+          <div class="col-media">
+            <div class="polaroid">
+              <img
+                src="assets/media/img/svgs/tape-svg.svg"
+                alt=""
+                class="tape"
+              />
+              <figure>
+                <img
+                  id="polaroid-media"
+                  src="assets/media/img/about-img.png"
+                  alt="Drawing of a man with a mustache serving coffee"
+                />
+                <figcaption>Est. 2016</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <header class="secondary-heading">
+          <h3>Meet the crew</h3>
+          <img src="assets/media/img/svgs/chalk-underline.svg" alt="" />
+        </header>
+        <div class="grid">
+          <div class="crew-1">
+            <img
+              class="crew-img"
+              src="assets/media/img/crew/crew1.svg"
+              alt="A happy man with glasses holding a mug steaming mug of coffee"
+            />
+            <p><span class="fw-500">Jared</span> / Founder</p>
+            <p>
+              Hi, I'm Jared. I'm a coffee connoisseur, and I'm passionate about
+              bringing new and exciting recipes to others who are equally
+              passionate about coffee.
+            </p>
+          </div>
+          <div class="crew-2">
+            <img
+              class="crew-img"
+              src="assets/media/img/crew/crew2.svg"
+              alt="A tired and cranky woman with her hair up wearing a t-shirt"
+            />
+            <p>Gwen / Experimentalist</p>
+            <p>
+              Hey! I'm Gwen, and coffee is the only thing keeping me awake right
+              now. I've been drinking coffee since I was twelve so I'm pretty
+              much an expert in the field.
+            </p>
+          </div>
+          <div class="crew-3">
+            <img
+              class="crew-img"
+              src="assets/media/img/crew/crew3.svg"
+              alt="A very happy man wearing a beanie and a hoodie"
+            />
+            <p>Chaz / Blogger</p>
+            <p>
+              Sup, the name is Chaz. I'm a full-time coffee blogger keeping
+              everyone in the know in the world of coffee things.
+            </p>
+          </div>
+          <div class="crew-4">
+            <img
+              class="crew-img"
+              src="assets/media/img/crew/crew4.svg"
+              alt="An angry woman wearing glasses and a sweater with her arms crossed"
+            />
+            <p>Janine / Blogger</p>
+            <p>
+              Howdy, the name is Janine. I come from a little town where
+              everyone drinks their coffee the same way, and that gets a little
+              boring. I decided to branch out and share my experiences with the
+              world!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recipes -->
+    <section class="recipes-section" id="recipes">
+      <div class="container">
+        <header>
+          <img id="chalk-line" src="assets/media/img/svgs/chalk-line.svg" />
+          <h2>Recipes</h2>
+          <img id="chalk-line" src="assets/media/img/svgs/chalk-line.svg" />
+        </header>
+        <div class="grid">
+          <div class="tab">
+            <button
+              class="tablinks btn"
+              onclick="openTab(event, 'cold')"
+              id="defaultOpen"
+            >
+              Cold <img src="assets/media/img/svgs/cold-icon.svg" alt="" />
+            </button>
+            <button class="tablinks btn" onclick="openTab(event, 'hot')">
+              Hot <img src="assets/media/img/svgs/hot-icon.svg" alt="" />
+            </button>
+            <button class="tablinks btn" onclick="openTab(event, 'treats')">
+              Treat <img src="assets/media/img/svgs/treats-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="recipes-content">
+            <div id="cold" class="tabcontent">
+              <div class="grid">
+                <div class="col-media">
+                  <div class="polaroid">
+                    <img
+                      src="assets/media/img/svgs/tape-svg.svg"
+                      alt=""
+                      class="tape"
+                    />
+                    <figure>
+                      <img
+                        class="polaroid-media"
+                        src="assets/media/img/polaroids/iced-recipe-img.png"
+                        alt="Delicious glass of iced coffee"
+                      />
+                      <figcaption>Iced Coffee</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-text">
+                  <div class="recipe">
+                    <h4>Ingredients</h4>
+                    <div class="prep-container">
+                      <div>
+                        <i class="fa-sharp fa-solid fa-utensils"></i>
+                        <p>Servings: 1</p>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Prep time: 10 min</p>
+                      </div>
+                    </div>
+                    <div class="ingredients">
+                      <ul>
+                        <li>6-8 oz of cold water</li>
+                        <li>1 tablespoon ground coffee</li>
+                        <li>2 oz sweetened condensed milk</li>
+                        <li>5 large ice cubes</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="instructions">
+                    <h4>Instructions</h4>
+                    <ol>
+                      <li>Brew the coffee.</li>
+                      <li>
+                        Combine the brewed coffee and sweetened condensed milk
+                        into a large cup.
+                      </li>
+                      <li>
+                        Stir thoroughly until the coffee and condensed milk are
+                        blended together.
+                      </li>
+                      <li>Refrigerate until the coffee is chilled.</li>
+                      <li>
+                        Once chilled; pour in glasses filled with ice cubes.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="col-media">
+                  <div class="polaroid">
+                    <img
+                      src="assets/media/img/svgs/tape-svg.svg"
+                      alt=""
+                      class="tape"
+                    />
+                    <figure>
+                      <img
+                        class="polaroid-media"
+                        src="assets/media/img/polaroids/coldbrew.png"
+                        alt="Delicious glass of cold brew coffee"
+                      />
+                      <figcaption>Cold Brew</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-text">
+                  <div class="recipe">
+                    <h3>Ingredients</h3>
+                    <div class="ingredients">
+                      <div class="prep-container">
+                        <div>
+                          <i class="fa-sharp fa-solid fa-utensils"></i>
+                          <p>Servings: 9</p>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-clock"></i>
+                          <p>Prep time: 10 min</p>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>
+                          1 ½ cups dark roast coffee, medium coarse ground
+                        </li>
+                        <li>6 cups room temperature filtered water</li>
+                        <li>Milk and/or flavorings, optional for serving</li>
+                        <li>
+                          Equipment: Large covered jar, strainer, and
+                          cheesecloth
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="instructions">
+                    <h3>Instructions</h3>
+                    <ol>
+                      <li>Grind coffee to a medium coarse grind.</li>
+                      <li>
+                        Add water and coffee grounds to a large jar, close lid,
+                        and shake to mix.
+                      </li>
+                      <li>Refrigerate for 24 hours.</li>
+                      <li>
+                        Place strainer over a clean jar and line it with
+                        cheesecloth. Strain the coffee into the clean jar.
+                      </li>
+                      <li>
+                        To serve, dilute ½ cup cold brew concentrate with ½ cup
+                        water.
+                      </li>
+                      <li>Add milk as desired.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="hot" class="tabcontent">
+              <div class="grid">
+                <div class="col-media">
+                  <div class="polaroid">
+                    <img
+                      src="assets/media/img/svgs/tape-svg.svg"
+                      alt=""
+                      class="tape"
+                    />
+                    <figure>
+                      <img
+                        class="polaroid-media"
+                        src="assets/media/img/polaroids/latte.png"
+                        alt="Declious cup of a latte"
+                      />
+                      <figcaption>Cafe Latte</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-text">
+                  <div class="recipe">
+                    <h3>Ingredients</h3>
+                    <div class="ingredients">
+                      <div class="prep-container">
+                        <div>
+                          <i class="fa-sharp fa-solid fa-utensils"></i>
+                          <p>Servings: 1</p>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-clock"></i>
+                          <p>Prep time: 10 min</p>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>2 espresso shots (2 ounces)</li>
+                        <li>4 ounces (½ cup) fresh whole milk</li>
+                        <li>
+                          2 tablespoons granulated sugar and/or syrup for
+                          flavoring
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="instructions">
+                    <h3>Instructions</h3>
+                    <ol>
+                      <li>Brew the espresso and pour into a mug.</li>
+                      <li>
+                        Froth the milk and pour into the center of the espresso.
+                      </li>
+                      <li>Add sugar to milk and espresso.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="col-media">
+                  <div class="polaroid">
+                    <img
+                      src="assets/media/img/svgs/tape-svg.svg"
+                      alt=""
+                      class="tape"
+                    />
+                    <figure>
+                      <img
+                        class="polaroid-media"
+                        src="assets/media/img/polaroids/pb-latte.png"
+                        alt="Delicious mug of a peanut butter latte"
+                      />
+                      <figcaption>Peanut Butter Latte</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-text">
+                  <div class="recipe">
+                    <h3>Ingredients</h3>
+                    <div class="ingredients">
+                      <div class="prep-container">
+                        <div>
+                          <i class="fa-sharp fa-solid fa-utensils"></i>
+                          <p>Servings: 1</p>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-clock"></i>
+                          <p>Prep time: 10 min</p>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>2 espresso shots (2 ounces)</li>
+                        <li>2 ounces (¼ cup) whole milk foam</li>
+                        <li>2 tablespoons sugar</li>
+                        <li>2 tablespoons peanut butter</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="instructions">
+                    <h3>Instructions</h3>
+                    <ol>
+                      <li>Brew the espresso and pour into a mug.</li>
+                      <li>
+                        Add the peanut butter, milk, and sugar to a saucepan.
+                        Heat, while stirring to melt the peanut butter. Bring
+                        the mixture to an almost boil.
+                      </li>
+                      <li>
+                        Froth the mixture and pour into the center of the
+                        espresso.
+                      </li>
+                      <li>Spoon the foam on top.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="treats" class="tabcontent">
+              <div class="grid">
+                <div class="col-media">
+                  <div class="polaroid">
+                    <img
+                      src="assets/media/img/svgs/tape-svg.svg"
+                      alt="Piece of tape"
+                      class="tape"
+                    />
+                    <figure>
+                      <img
+                        class="polaroid-media"
+                        src="assets/media/img/polaroids/caramel-frap.png"
+                        alt="Delicious Caramel Frappuccino coffee drink"
+                      />
+                      <figcaption>Caramel Frappuccino</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-text">
+                  <div class="recipe">
+                    <h3>Ingredients</h3>
+                    <div class="prep-container">
+                      <div>
+                        <i class="fa-sharp fa-solid fa-utensils"></i>
+                        <p>Servings: 1</p>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Prep time: 10 min</p>
+                      </div>
+                    </div>
+                    <div class="ingredients">
+                      <ul>
+                        <li>2 cups ice</li>
+                        <li>1 cup strong brewed coffee (cooled)</li>
+                        <li>¾ cup milk (or half and half)</li>
+                        <li>¼ cup caramel sauce</li>
+                        <li>1 tsp vanilla extract</li>
+                        <li>whipped cream and caramel sauce</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="instructions">
+                    <h3>Instructions</h3>
+                    <ol>
+                      <li>Make 1 cup of strong brewed coffee</li>
+                      <li>Cover and chill in refrigerator for 15 minutes</li>
+                      <li>
+                        Put ice, cooled coffee, half & half, caramel sauce,
+                        sugar, and vanilla into a blender. Mix on high until
+                        smooth.
+                      </li>
+                      <li>
+                        Pour into glasses. Top with whipped cream and a drizzle
+                        of caramel sauce
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="col-media">
+                  <div class="polaroid">
+                    <img
+                      src="assets/media/img/svgs/tape-svg.svg"
+                      alt=""
+                      class="tape"
+                    />
+                    <figure>
+                      <img
+                        class="polaroid-media"
+                        src="assets/media/img/polaroids/affogato.png"
+                        alt="Delicious bowl of Affogato coffee treat"
+                      />
+                      <figcaption>Affogato</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-text">
+                  <div class="recipe">
+                    <h3>Ingredients</h3>
+                    <div class="ingredients">
+                      <div class="prep-container">
+                        <div>
+                          <i class="fa-sharp fa-solid fa-utensils"></i>
+                          <p>Servings: 1</p>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-clock"></i>
+                          <p>Prep time: 10 min</p>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>2 scoops vanilla ice cream, (or vanilla gelato)</li>
+                        <li>
+                          2 oz espresso, (2 shots), or strong brewed coffee
+                        </li>
+                        <li>Chocolate shavings or other toppings if desired</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="instructions">
+                    <h3>Instructions</h3>
+                    <ol>
+                      <li>Brew 2 shots of espresso.</li>
+                      <li>
+                        Add 2 scoops of ice cream to a serving bowl or glass.
+                      </li>
+                      <li>
+                        Add chocolate shavings or other toppings if desired.
+                      </li>
+                      <li>
+                        Pour 2 shots of hot espresso over the ice cream and
+                        serve right away.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <header>
+          <img id="chalk-line" src="assets/media/img/svgs/chalk-line.svg" />
+          <h2>What the experts say</h2>
+          <img id="chalk-line" src="assets/media/img/svgs/chalk-line.svg" />
+        </header>
+        <div class="grid">
+          <div class="review">
+            <figure class="polaroid">
+              <img
+                src="assets/media/img/svgs/tape-svg.svg"
+                alt=""
+                class="tape"
+              />
+              <img
+                class="polaroid-media"
+                src="assets/media/img/reviews/review1.png"
+                alt="A happy man with glasses holding a mug steaming mug of coffee"
+              />
+              <figcaption>Brian</figcaption>
+            </figure>
+            <p>
+              <i class="fas fa-quote-left"></i>Ever since I began trying some of
+              these concoctions, I have felt my IQ level reach new heights. I
+              even got a promotion at work and my boss said I was hard worker.
+            </p>
+            <ul class="flex">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <p>5/5</p>
+            </ul>
+          </div>
+          <div class="review">
+            <figure class="polaroid">
+              <img
+                src="assets/media/img/svgs/tape-svg.svg"
+                alt=""
+                class="tape"
+              />
+              <img
+                class="polaroid-media"
+                src="assets/media/img/reviews/review2.png"
+                alt="A happy man with glasses holding a mug steaming mug of coffee"
+              />
+              <figcaption>Stacey</figcaption>
+            </figure>
+            <p>
+              <i class="fas fa-quote-left"></i>I have three kids and these
+              "concoctions" give me the energy I need to get through the day.
+              Highly recommend.
+            </p>
+            <ul class="flex">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <p>5/5</p>
+            </ul>
+          </div>
+          <div class="review">
+            <figure class="polaroid">
+              <img
+                src="assets/media/img/svgs/tape-svg.svg"
+                alt=""
+                class="tape"
+              />
+              <img
+                class="polaroid-media"
+                src="assets/media/img/reviews/review3.png"
+                alt="A happy man with glasses holding a mug steaming mug of coffee"
+              />
+              <figcaption>Joseph</figcaption>
+            </figure>
+            <p>
+              <i class="fas fa-quote-left"></i>Holy smokes these recipes are
+              pure genius. Seriously, I drink like 5 a day. I was beginning to
+              get bored with drinking the same coffee every day, but now I have
+              so many options!
+            </p>
+            <ul class="flex">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <p>5/5</p>
+            </ul>
+          </div>
+          <div class="review">
+            <figure class="polaroid">
+              <img
+                src="assets/media/img/svgs/tape-svg.svg"
+                alt=""
+                class="tape"
+              />
+              <img
+                class="polaroid-media"
+                src="assets/media/img/reviews/review4.png"
+                alt="A happy man with glasses holding a mug steaming mug of coffee"
+              />
+              <figcaption>Paul</figcaption>
+            </figure>
+            <p>
+              <i class="fas fa-quote-left"></i>Very impressed. I usually like my
+              coffee black, but when I'm looking to spice things up, I look to
+              Dad's Coffee Concoctions to lead me in the right direction.
+            </p>
+            <ul class="flex">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <p>5/5</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog">
+      <div class="container">
+        <header>
+          <img id="chalk-line" src="assets/media/img/svgs/chalk-line.svg" />
+          <h2>Fresh Blog Posts</h2>
+          <img id="chalk-line" src="assets/media/img/svgs/chalk-line.svg" />
+        </header>
+        <div class="grid">
+          <div class="post1 card">
+            <img src="assets/media/img/svgs/tape-svg.svg" alt="" class="tape" />
+            <div class="card-top">
+              <img
+                src="assets/media/img/blog/blog-post2.png"
+                alt="Photo of coffee with whipped cream and chocolate drizzle"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Cupid's Coffee</h3>
+              <p>February 14, 2022</p>
+              <p>
+                This coffee recipe is sure to make your spouse forgive you for
+                forgetting to get a Valentine's Day gift.
+              </p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="link"
+                ><span class="link-underline">Read more</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="post2 card">
+            <img src="assets/media/img/svgs/tape-svg.svg" alt="" class="tape" />
+            <div class="card-top">
+              <img
+                src="assets/media/img/blog/blog-post1.png"
+                alt="Photo of coffee with whipped cream"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Ho Ho Ho(t) Coffee</h3>
+              <p>December 25, 2021</p>
+              <p>
+                Word on the street is, Santa drinks this concoction before the
+                big day. Helps him deliver faster than Amazon.
+              </p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="link"
+                ><span class="link-underline">Read more</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="post3 card">
+            <img src="assets/media/img/svgs/tape-svg.svg" alt="" class="tape" />
+            <div class="card-top">
+              <img
+                src="assets/media/img/blog/blog-post3.png"
+                alt="Photo of a hazelnut coffee dessert"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Witch-Hazel(nut)</h3>
+              <p>October 31, 2021</p>
+              <p>
+                Trick or treat, smell our feet, we've got a coffee dessert
+                that's good to eat.
+              </p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="link"
+                ><span class="link-underline">Read more</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="post4 card">
+            <div>
+              <h3>Freedom Coffee</h3>
+              <p>July 4, 2021</p>
+              <p>
+                Celebrate Independence Day by breaking free from the traditional
+                coffee and try one of these concoctions.
+              </p>
+              <a href="#" class="link"
+                ><span class="link-underline">Read more</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <hr />
+            <div>
+              <h3>Cuppa Fool'd Ya</h3>
+              <p>April 1, 2021</p>
+              <p>
+                If you try this cup of coffee, you'll instantly have one million
+                dollars in your bank account. April Fools! You may actually feel
+                like a million dollars though.
+              </p>
+              <a href="#" class="link"
+                ><span class="link-underline">Read more</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-nav">
+      <div class="container">
+        <ul class="footer-nav-list" role="list">
+          <li class="nav-item">
+            <a class="nav-link link" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="#recipes">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="#blog">Blog</a>
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="#" aria-label="Go to Facebook page"
+              ><img
+                id="facebook-icon"
+                src="assets/media/img/svgs/social-icons/facebook.png"
+                alt="Facebook Icon"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#" aria-label="Go to Instagram page"
+              ><img
+                id="instagram-icon"
+                src="assets/media/img/svgs/social-icons/instagram.png"
+                alt="Instagram Icon"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#" aria-label="Go to Twitter page"
+              ><img
+                id="twitter-icon"
+                src="assets/media/img/svgs/social-icons/twitter.png"
+                alt="Twitter Icon"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#" aria-label="Go to Pinterest"
+              ><img
+                id="pinterest-icon"
+                src="assets/media/img/svgs/social-icons/pinterest.png"
+                alt="Pinterest Icon"
+            /></a>
+          </li>
+        </ul>
+        <p>© 2022 Dad's Coffee Concoctions.</p>
+      </div>
+    </footer>
+  </body>
+</html>

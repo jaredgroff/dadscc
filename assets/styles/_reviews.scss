@@ -1,0 +1,59 @@
+.reviews-section {
+  position: relative;
+  color: var(--clr-base-lite);
+  h2 {
+    text-align: center;
+    color: var(--clr-base-lite);
+  }
+}
+#reviews-media {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+}
+
+.review-polaroid {
+  position: relative;
+  width: calc(clamp(350px, 50%, 1000px) - 1rem);
+  margin: 0 auto;
+  .tape {
+    width: 50%;
+    z-index: 2;
+  }
+}
+
+.review-img {
+  width: 350px;
+  height: 300px;
+  background-color: var(--clr-base-lite);
+  margin-block: 0rem 1rem;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  &:nth-child(1) .polaroid {
+    transform: rotate(-1deg);
+  }
+  &:nth-child(2) .polaroid {
+    transform: rotate(2deg);
+  }
+  &:nth-child(3) .polaroid {
+    transform: rotate(-2deg);
+  }
+  &:nth-child(4) .polaroid {
+    transform: rotate(1deg);
+  }
+  .flex {
+    flex-direction: row;
+  }
+  li i {
+    color: rgb(255, 169, 0);
+  }
+  .fa-quote-left {
+    margin: 0 var(--spacing-1);
+  }
+}

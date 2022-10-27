@@ -1,0 +1,142 @@
+// 600px
+@media (min-width: 37.5em) {
+  .blog-section .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "post1 post2"
+      "post3 post4";
+  }
+  .polaroid {
+    width: 75%;
+  }
+  .about-section .polaroid {
+    width: 60%;
+  }
+}
+
+// 768px
+@media (min-width: 48em) {
+  .navbar-brand {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: initial;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 0;
+    z-index: 1;
+    transform: initial;
+    transition: initial;
+  }
+
+  .nav-link {
+    transition: all 0.1s;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+  .about-section .flex {
+    align-items: flex-start;
+  }
+
+  .footer-nav-list {
+    justify-content: center;
+    .nav-item {
+      margin: 0 1rem;
+    }
+  }
+}
+
+// 1024px
+@media (min-width: 64em) {
+  .flex {
+    flex-direction: row;
+  }
+  .flex > * {
+    flex-basis: 100%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section {
+    margin-bottom: 10rem;
+  }
+  .hero-section .button-container {
+    justify-content: left;
+  }
+  .about-section .col-media {
+    margin-block: auto;
+  }
+  .about-section .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .recipes-section .grid {
+    grid-template-columns: 1fr 2fr;
+  }
+  .tab {
+    width: fit-content;
+    height: 25vh; // experiment with this value, try changing to 110vh
+    min-height: 200px;
+    margin-top: 5rem;
+    top: 6rem;
+    flex-direction: column;
+  }
+  .review-polaroid {
+    .tape {
+      width: 30%;
+      left: 35%;
+    }
+  }
+}
+
+// 1280px
+@media (min-width: 80em) {
+  .recipes-section {
+    .grid {
+      grid-template-columns: auto;
+      grid-template-areas: "tab recipes-content";
+    }
+    .tabcontent .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: var(--spacing);
+      grid-auto-flow: row;
+      grid-template-areas:
+        "col-media recipe"
+        "col-media instructions";
+    }
+  }
+}
+
+// 1366px
+@media (min-width: 85.375em) {
+  .blog-section .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "post1 post2 post3 post4";
+  }
+}
+
+// 1920px
+@media (min-width: 120em) {
+}
+
+// 2560px
+@media (min-width: 160em) {
+  .navbar {
+    height: 10rem;
+  }
+}
+
+// 3840px
+@media (min-width: 240em) {
+}

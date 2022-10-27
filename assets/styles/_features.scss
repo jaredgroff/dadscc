@@ -1,0 +1,10 @@
+.features-icons {
+  display: flex;
+  align-items: center;
+  & > * {
+    padding-right: 1rem;
+  }
+  img {
+    height: 50px;
+  }
+}

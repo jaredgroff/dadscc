@@ -1,0 +1,39 @@
+// Font Weights
+.fw-500 {
+  font-weight: var(--fw-500);
+}
+.ff-ital {
+  font-family: "poppinsitalic";
+}
+
+// Misc
+
+.ff-fun {
+  font-family: var(--ff-fun);
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 80rem);
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: calc(3 * var(--spacing-1));
+}
+.link {
+  color: var(--clr-base-lite);
+  padding-block: 1rem;
+  font-family: var(--ff-fun);
+  position: relative;
+  &:hover {
+    color: var(--clr-primary);
+    cursor: pointer;
+  }
+}
